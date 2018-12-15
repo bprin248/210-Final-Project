@@ -1,0 +1,50 @@
+/*  CSS file  */
+/* Title  Exercise cascading
+  @author: Benjamin Prince
+  creation date:10/3/2018
+  modified date:12/4/2018
+			*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+main img {
+	width: 50%;
+	margin-left: 5%;
+	margin-right: 20%;
+	border:1px solid black;
+	margin-top: 2%;
+}
+main {
+	align-items: center;
+}
+.requiredFieldsColor {
+	color: red;
+}
+h3 span {
+	color: red;
+}
+main img {
+	
+}
+h2 {
+	font-size: 2em;
+	color: gold;
+	font-family: Oswald;
+}
+.formStuff {
+	font-weight:bold;
+}
+form {
+	background-color: #d3d3d3;
+	width: 60%;
+}
+#sub {
+	border:1px solid black;
+}
+#name {
+	border:1px solid black;
+}
+#email {
+	border:1px solid black;
+}
+#reason {
+	border:1px solid black;
+}

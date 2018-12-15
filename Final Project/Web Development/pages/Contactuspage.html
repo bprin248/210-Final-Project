@@ -1,0 +1,110 @@
+<!-- HTML file -->
+<!--Title  Final Project
+  @author: Benjamin Prince
+  creation date:10/3/2018
+  modified date:12/4/2018
+  			-->
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Final Project</title>
+			<meta charset ="utf-8">
+			<link rel="stylesheet" href="../main_style.css">
+			<link rel="stylesheet" href="../css/Contact.css">
+		</head>
+		<body>
+			<header>
+				<a href="../index.html"><img src="../images/Logo.svg" alt="Desert Sky" onclick="./index.html"></a>
+				<h1>Sahara Gold</h1>
+				<nav> 
+					<ul class="nav">
+						<li><a href="../index.html">HOME</a></li>
+						<li><a href="./Investorspage.html">INVESTORS</a></li>
+						<li><a href="./Careerspage.html">CAREERS</a></li>
+						<li><a href="./Aboutuspage.html">ABOUT US</a></li>
+						<li><a href="./Contactuspage.html">CONTACT US</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<img src="../images/thSDIV9RBP.jpg" alt="Morgan Freeman">
+				<h2>Contact Us</h2>
+				<p>We can't wait to hear from you! Please email us by completing the below form or contacting us during our office hours. Office hours: Monday & Wednesday at 12:00pm - 1:50pm.</p>
+				<form name="finalForm" action="mailto:somebody@example.com" enctype="text/plain" onsubmit="return validForm()" method="post">
+			<fieldset>
+				
+				
+					<label></label>
+							<p class="formStuff">Name<label class="requiredFieldsColor">*</label></p>
+							<input type="text" id="name" name="name" required>
+				
+							<p class="formStuff">Email Address<label class="requiredFieldsColor">*</label></p>
+							<input value="" type="email" id="email" name="email" required>
+							<p class="formStuff">Message<label class="requiredFieldsColor">*</label></p>
+							<input type="text" id="reason" name="reasonbox" size="40" required>
+							<h3>Everthing marked with <span>*</span> is required</h3>
+							<input type="submit" id="sub" value="Submit">
+			</fieldset>
+		</form>
+		<script>
+		function validForm(){
+			var x = document.getElementById("name").value;
+			var regex = /^\w*.{6,}$/g;
+			
+			if (x == "") {
+				alert("Name must be filled out");
+			}
+			else if(!regex.test(x)){
+			
+			alert("Name must be atleast 6 letters long");
+			}
+			
+			var mail = document.getElementById("email").value;
+			regex =/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$/g;
+			if (!regex.test(mail)){
+			
+			alert("Please enter a valid email");
+			return false;
+			}
+			else{
+			return true;
+			}
+			var word = document.getElementById("password").value;
+			regex = /^(?=.*\d)(?=.*[A-Z]).{8,}$/g;
+			
+			if(word == ""){
+			alert("Password must be filled out")
+			}
+			if(!regex.test(word)){
+			
+			alert("Password must be atleast 8 characters long with 1 uppercase letter and 1 digit");
+			}
+			
+			
+			
+			
+			var text = document.getElementById("reason").value;
+			regex = /^\w*.{0,256}$/g;
+			if(!regex.test("reason")){
+			
+			alert("Reason cannot exceed 256 characters");
+			return false;
+			}
+			
+			var id = document.getElementById("UserID").value;
+			if(id == ""){
+			alert("User ID must be filled out")
+			}
+			
+			
+		}
+		</script>
+			</main>
+			<footer>
+			<p><a href="./Aboutuspage.html">About Us</a> | <a href="./Contactuspage.html">Contact Us</a></p>
+			<p id="copyright">Copyright ©2018, Sahara Gold, Inc.</p>
+			</footer>
+		</body>
+		
+	</html>
+	

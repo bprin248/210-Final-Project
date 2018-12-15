@@ -1,0 +1,32 @@
+/*  CSS file  */
+/* Title  Exercise cascading
+  @author: Benjamin Prince
+  creation date:10/3/2018
+  modified date:12/4/2018
+			*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+.predict {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+#aside {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+h2 {
+	font-size: 2em;
+	color: gold;
+	font-family: Oswald;
+}
+#main p {
+	word-wrap: break-word;
+	width:80%;
+}
+#aside p {
+	word-wrap: break-word;
+	width:80%;
+}
+.predict p {
+	word-wrap: break-word;
+	width:80%;
+}
